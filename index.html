@@ -38,8 +38,22 @@
       </a-entity>
 
       <!-- Iluminación -->
-      <a-light type="ambient" color="#FAF9F6" intensity="0.7"></a-light>
-      <a-light type="directional" position="1 3 2" intensity="2" color="#ffffff"></a-light>
+  
+    <!-- Iluminación -->
+<a-light type="ambient" color="#FAF9F6" intensity="0.7"></a-light>
+
+<!-- Luz direccional principal -->
+<a-light type="directional" position="1 3 2" intensity="2" color="#ffffff"></a-light>
+
+<!-- Luz direccional secundaria desde la izquierda -->
+<a-light type="directional" position="-2 2 1" intensity="1.2" color="#ffd1dc"></a-light>
+
+<!-- Luz direccional desde atrás para resaltar bordes -->
+<a-light type="directional" position="0 2 -4" intensity="1" color="#add8e6"></a-light>
+
+<!-- Luz puntual cerca del modelo -->
+<a-light type="point" position="0 1.5 2" intensity="1.5" distance="10" decay="2" color="#ffffff"></a-light>
+
     </a-scene>
   </body>
 </html>
